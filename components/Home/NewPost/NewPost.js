@@ -79,6 +79,7 @@ const NewPost = props => {
           selectionColor="#2196F3"
           style={styles.caption}
           value={caption}
+          placeholderTextColor="#a3a2a2"
           onChangeText={val => {
             setCaption(val);
             setIsValid(val.length > 3);
@@ -124,6 +125,7 @@ const styles = StyleSheet.create({
     borderColor: '#eee',
     paddingLeft: 10,
     fontFamily: 'MadeTommy',
+    color: 'black',
   },
   button: {
     backgroundColor: '#2196F3',

@@ -90,6 +90,7 @@ const SignIn = props => {
           placeholder="email"
           style={styles.textInput}
           selectionColor="#2196F3"
+          placeholderTextColor="#a3a2a2"
           value={email}
           onChangeText={val => setEmail(val)}
         />
@@ -98,6 +99,7 @@ const SignIn = props => {
             placeholder="password"
             style={{...styles.textInput, marginBottom: 20}}
             selectionColor="#2196F3"
+            placeholderTextColor="#a3a2a2"
             secureTextEntry={!passwordVisible}
             value={password}
             onChangeText={val => setPassword(val)}
@@ -155,6 +157,7 @@ const styles = StyleSheet.create({
     marginBottom: 7,
     fontFamily: 'MadeTommy',
     width: '100%',
+    color: 'black',
   },
   textInputWrapper: {
     display: 'flex',
@@ -189,7 +192,7 @@ const styles = StyleSheet.create({
     borderRadius: 2,
     display: 'flex',
     flexDirection: 'row',
-    justifyContent: 'space-evenly'
+    justifyContent: 'space-evenly',
   },
   googleButtonText: {
     color: 'white',

@@ -104,6 +104,7 @@ const SignUp = props => {
           value={username}
           onChangeText={val => setUsername(val)}
           selectionColor="#2196F3"
+          placeholderTextColor="#a3a2a2"
         />
         <TextInput
           placeholder="email"
@@ -111,6 +112,7 @@ const SignUp = props => {
           value={email}
           onChangeText={val => setEmail(val)}
           selectionColor="#2196F3"
+          placeholderTextColor="#a3a2a2"
         />
         <View style={styles.textInputWrapper}>
           <TextInput
@@ -120,6 +122,7 @@ const SignUp = props => {
             onChangeText={val => setPassword(val)}
             secureTextEntry={!passwordVisible}
             selectionColor="#2196F3"
+            placeholderTextColor="#a3a2a2"
           />
 
           <Icon
@@ -137,6 +140,7 @@ const SignUp = props => {
             onChangeText={val => setConfirmPassword(val)}
             secureTextEntry={!confirmPasswordVisible}
             selectionColor="#2196F3"
+            placeholderTextColor="#a3a2a2"
           />
           <Icon
             name={confirmPasswordVisible ? 'visibility-off' : 'visibility'}
@@ -184,6 +188,7 @@ const styles = StyleSheet.create({
     marginBottom: 7,
     fontFamily: 'MadeTommy',
     width: '100%',
+    color: 'black',
   },
   textInputWrapper: {
     display: 'flex',

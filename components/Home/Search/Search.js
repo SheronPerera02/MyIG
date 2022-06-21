@@ -19,6 +19,7 @@ const Search = props => {
           placeholder="Search"
           onChangeText={val => setText(val)}
           value={text}
+          placeholderTextColor="#a3a2a2"
         />
         <SearchResultList
           users={props.users}
@@ -46,6 +47,7 @@ const styles = StyleSheet.create({
     fontFamily: 'MadeTommy',
     paddingLeft: 20,
     marginTop: 20,
+    color: 'black',
   },
 });
 

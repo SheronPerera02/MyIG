@@ -41,6 +41,7 @@ const Chat = props => {
         user={{
           _id: props.uid,
         }}
+        textInputStyle={{color: 'black'}}
       />
     </View>
   );
